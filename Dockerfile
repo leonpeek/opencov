@@ -23,6 +23,7 @@ ADD yarn.lock /opencov/yarn.lock
 
 RUN yarn install
 RUN mix deps.get
+RUN ls
 
 ADD . /opencov
 RUN mix compile
